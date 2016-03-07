@@ -34,3 +34,7 @@ p {
 .navbar-default .navbar-nav > .active > a:visited {
     background-color: #FFF;
 }
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}

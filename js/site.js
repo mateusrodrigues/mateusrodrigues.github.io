@@ -12,11 +12,8 @@ $(document).ready(function() {
         controlArrows: true,
         verticalCentered: true,
         resize : false,
-        sectionsColor : ['#FFF', '#33C3F0'],
+        sectionsColor : ['#FFF', '#FFF', '#33C3F0'],
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '#menu, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
     });
 })

@@ -3,6 +3,14 @@
     <head>
         <title>Mateus Rodrigues de Morais</title>
         
+        <!-- Bootstrap stylesheet -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+            integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+            
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/site.css" />
+        
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         
@@ -10,6 +18,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            
         <!-- FullPage.js javascript -->
         <script src="js/jquery.fullpage.min.js"></script>
         
@@ -18,17 +27,9 @@
         
         <!-- FullPage.js stylesheet -->
         <link rel="stylesheet" href="css/jquery.fullpage.min.css" />
-        
-        <!-- Bootstrap stylesheet -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-            integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-            
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/site.css" />
     </head>
     <body>
-        <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -40,9 +41,9 @@
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                <ul id="menu" class="nav navbar-nav">
+                    <li data-menuanchor="home"><a href="#home">Home</a></li>
+                    <li data-menuanchor="about"><a href="#about">About</a></li>
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -60,21 +61,24 @@
         </nav><!-- navbar-default -->
         
         <div id="fullpage">
+            
             <!-- Landing section -->
             <div class="section">
                 <div class="container">
                     <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <img src="images/mateus.jpg" class="img-responsive img-circle" />
+                        </div>
                         <div class="col-md-12">
                             <h1>Hello! I'm Mateus Rodrigues</h1>
                             <h4>Developer, engineer-to-be and technology enthusiast.</h4>
-                            <a class="btn btn-default" href="#secondPage">Find out more!</a>
                         </div>
                     </div>
                 </div>
             </div>
             
-            
-            <div class="section fp-auto-height">
+            <!-- About section -->
+            <div class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -87,7 +91,8 @@
                 </div>
             </div>
             
-            <div class="section">
+            <!-- Languages section -->
+            <div class="section fp-auto-height">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="container">

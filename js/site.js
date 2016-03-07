@@ -15,5 +15,8 @@ $(document).ready(function() {
         sectionsColor : ['#FFF', '#FFF', '#33C3F0'],
         paddingTop: '3em',
         paddingBottom: '10px',
+        
+        // Scrolling
+        scrollOverflow: true
     });
 })

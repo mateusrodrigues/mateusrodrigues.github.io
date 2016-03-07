@@ -16,6 +16,10 @@ p {
     line-height: 1.5;
 }
 
+.section .content-inverse {
+    color: #FFF;
+}
+
 .navbar-default {
     background-color: #33C3F0;
     border-bottom: 0;

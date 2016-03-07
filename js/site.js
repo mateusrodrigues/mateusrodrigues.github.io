@@ -2,10 +2,10 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         // Navigation
         menu: '#menu',
-        anchors: ['home', 'about', 'languages'],
+        anchors: ['home', 'about', 'languages', 'volunteering'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About', 'Languages'],
+        navigationTooltips: ['Home', 'About', 'Languages', 'Volunteering'],
         showActiveTooltip: false,
         
         // Design

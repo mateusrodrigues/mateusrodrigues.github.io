@@ -1,19 +1,21 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage'],
+        // Navigation
+        menu: '#menu',
+        anchors: ['home', 'about', 'languages'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        navigationTooltips: ['Home', 'About', 'Languages'],
         showActiveTooltip: false,
         
-        //Design
+        // Design
         controlArrows: true,
         verticalCentered: true,
         resize : false,
-        sectionsColor : ['#ccc', '#fff'],
+        sectionsColor : ['#FFF', '#33C3F0'],
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        fixedElements: '#menu, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
     });

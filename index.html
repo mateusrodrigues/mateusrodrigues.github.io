@@ -5,42 +5,96 @@
         
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        
+        <!-- Bootstrap JavaScript -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <!-- FullPage.js javascript -->
-        <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+        <script src="js/jquery.fullpage.min.js"></script>
+        
         <!-- Initialize fullpage.js -->
         <script src="js/site.js"></script>
         
         <!-- FullPage.js stylesheet -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css" />
-        <!-- Skeleton stylesheet -->
-        <!-- <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css" /> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+        <link rel="stylesheet" href="css/jquery.fullpage.min.css" />
+        
+        <!-- Bootstrap stylesheet -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+            integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+            
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/site.css" />
     </head>
     <body>
+        <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav><!-- navbar-default -->
+        
         <div id="fullpage">
             <!-- Landing section -->
             <div class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="twelve columns">
+                        <div class="col-md-12">
                             <h1>Hello! I'm Mateus Rodrigues</h1>
-                            <h4>And I'm a developer :)</h4>
+                            <h4>Developer, engineer-to-be and technology enthusiast.</h4>
+                            <a class="btn btn-default" href="#secondPage">Find out more!</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             
+            <div class="section fp-auto-height">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>About me!</h1>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="section">
                 <div class="row">
-                    <div class="twelve columns">
-                        <pre>
-                            <code>
-                                .some-class {
-                                    background-color: red;
-                                }
-                            </code>
-                        </pre>
+                    <div class="col-md-12">
+                        <div class="container">
+                            <div class="row">
+                                <h1>Hello!</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

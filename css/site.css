@@ -27,7 +27,7 @@ p {
 }
 
 .navbar-default {
-    background-color: #33C3F0;
+    background-color: #F6881E;
     border-bottom: 0;
 }
 
@@ -49,6 +49,11 @@ p {
     color: #FFF;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+/* Navigation dots */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #F6881E;
 }
 
 /* Button Personalization */

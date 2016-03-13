@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         // Navigation
         menu: '#menu',
-        anchors: ['home', 'about', 'languages', 'volunteering', 'contact'],
+        anchors: ['home', 'about', 'skills', 'volunteering', 'contact'],
         navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: false,

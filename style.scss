@@ -448,6 +448,16 @@ tbody tr:nth-child(odd) th {
     }
 }
 
+.post-title {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.post-date {
+    font-size: 12pt;
+    margin-bottom: 2em;
+}
+
 .highlight .hll {
     background-color: #ffffcc
 }

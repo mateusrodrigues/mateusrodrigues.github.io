@@ -45,8 +45,8 @@ permalink:          /:year/:month/:day/:title/
 nav:
   - name:           "About"
     href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
+  - name:           "Contact"
+    href:           "/contact"
 
 sass:
   style:            :compressed

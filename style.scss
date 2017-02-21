@@ -396,13 +396,21 @@ tbody tr:nth-child(odd) th {
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
-    @media (min-width: 38rem) {
+    // @media (min-width: 38rem) {
+    @media (min-width: 1920px) {
+        margin-top: 0;
+        margin-left: 20%;
+        padding: 3%;
+        min-width: 80%;
+        height: 950px;
+    }
+    @media (min-width: 1440px) {
         margin-top: 0;
         margin-left: 20%;
         padding: 3%;
         min-width: 80%;
         // height: 800px;
-        height: 950px;
+        height: 800px;
     }
 }
 

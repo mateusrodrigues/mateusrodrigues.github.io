@@ -319,6 +319,10 @@ tbody tr:nth-child(odd) th {
     // }
 }
 
+.page-title {
+    font-weight: bold !important;
+}
+
 .profile {
     padding: 2%;
     background-repeat:no-repeat;
@@ -397,20 +401,20 @@ tbody tr:nth-child(odd) th {
     margin-right: auto;
     overflow: auto;
     // @media (min-width: 38rem) {
-    @media (min-width: 1920px) {
-        margin-top: 0;
-        margin-left: 20%;
-        padding: 3%;
-        min-width: 80%;
-        height: 950px;
-    }
     @media (min-width: 1440px) {
         margin-top: 0;
         margin-left: 20%;
         padding: 3%;
         min-width: 80%;
         // height: 800px;
-        height: 800px;
+        height: 750px;
+    }
+    @media (min-width: 1920px) {
+        margin-top: 0;
+        margin-left: 20%;
+        padding: 3%;
+        min-width: 80%;
+        height: 950px;
     }
 }
 

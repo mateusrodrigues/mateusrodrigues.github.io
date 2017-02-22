@@ -43,6 +43,10 @@ paginate_path:      "/:num/"
 permalink:          /:year/:month/:day/:title/
 
 nav:
+  - name:           "Home Page"
+    href:           "/"
+  - name:           "Archives"
+    href:           "/archives"
   - name:           "About"
     href:           "/about"
   - name:           "Contact"

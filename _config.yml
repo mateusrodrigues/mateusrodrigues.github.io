@@ -18,6 +18,7 @@ title: "Mateus's Blog"
 email: mateus.rodrigues@live.com
 description: > # this means to ignore newlines until "baseurl:"
   Developer, engineer-to-be and technology enthusiast.
+  Co-Founder @ <a href="http://ifabric.com.br" target="_blank">iFabric</a>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

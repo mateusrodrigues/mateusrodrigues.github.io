@@ -20,10 +20,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Developer, engineer-to-be and technology enthusiast.
   Co-Founder @ <a href="http://ifabric.com.br" target="_blank">iFabric</a>
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://blog.mateus.tech" # the base hostname & protocol for your site, e.g. http://example.com
 
 # theme specific options
-author:             "mateusrodrigues"
+author:             "Mateus Rodrigues de Morais"
 gravatar_hash:      "44fe99ce1cd07d36f5898383206f1344"
 twitter:            "hitech_8"
 email:              "mateus.rodrigues@live.com"
@@ -68,11 +68,21 @@ defaults:
     values:
       layout:       "post"
 
+# Webmaster Verifications
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+
 # Build settings
 markdown: kramdown
 gems:
+  - jemoji
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -32,7 +32,7 @@ github:             "mateusrodrigues"
 linkedin:           "mateusrodriguesdemorais"
 # facebook:           "johndoe"
 
-disqus_shortname:   "mateus-2"
+disqus_shortname:   "mateusrodrigues"
 
 # background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 background:         "/crissxcross.png"
@@ -44,14 +44,12 @@ paginate_path:      "/:num/"
 permalink:          /:year/:month/:day/:title/
 
 nav:
-  - name:           "Home Page"
+  - name:           "Home"
     href:           "/"
   - name:           "Archives"
     href:           "/archives"
   - name:           "About"
     href:           "/about"
-  - name:           "Contact"
-    href:           "/contact"
 
 sass:
   style:            :compressed

@@ -27,8 +27,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Admin panel for Jekyll
-gem 'jekyll-admin', group: :jekyll_plugins
-
 # Avoid polling for changes
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+# Jekyll Admin
+gem 'jekyll-admin', '~> 0.4.0', group: :jekyll_plugins
+
+# Related Posts
+gem 'jekyll-tagging-related_posts'

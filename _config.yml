@@ -35,7 +35,7 @@ linkedin:           "mateusrodriguesdemorais"
 disqus_shortname:   "mateusrodrigues"
 
 # background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
-background:         "/crissxcross.png"
+background:         "/images/crissxcross.png"
 
 paginate:           5
 # paginate_path:      "/page:num/"
@@ -50,6 +50,10 @@ nav:
     href:           "/archives"
   - name:           "About"
     href:           "/about"
+
+# Where are tags and categories displayed
+tag_page: '/tags/'
+category_page: '/categories/'
 
 sass:
   style:            :compressed
@@ -76,6 +80,7 @@ webmaster_verifications:
   yandex: 1234
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 gems:
   - jemoji
@@ -83,6 +88,8 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
 exclude:
   - Gemfile
   - Gemfile.lock

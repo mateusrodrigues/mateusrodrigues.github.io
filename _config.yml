@@ -93,3 +93,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - deploy.cmd
+  - getruby.cmd
+  - README.md

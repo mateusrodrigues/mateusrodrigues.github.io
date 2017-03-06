@@ -11,4 +11,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+
+    {% if site.google_analytics %}
+        {% include analytics.html %}
+    {% endif %}
 </head>

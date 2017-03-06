@@ -33,9 +33,9 @@ linkedin:           "mateusrodriguesdemorais"
 # facebook:           "johndoe"
 
 # Google services
-google_analytics:   UA-89988992-1
+google_analytics:   # UA-89988992-1
 
-disqus_shortname:   "mateusrodrigues"
+disqus_shortname:   # "mateusrodrigues"
 
 # background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 background:         "/images/crissxcross.png"

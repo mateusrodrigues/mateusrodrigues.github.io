@@ -515,6 +515,12 @@ tbody tr:nth-child(odd) th {
     margin-bottom: 2em;
 }
 
+.post {
+    a {
+        color: $theme-color;
+    }
+}
+
 .highlight .hll {
     background-color: #ffffcc
 }

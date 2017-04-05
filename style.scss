@@ -350,6 +350,12 @@ tbody tr:nth-child(odd) th {
         float: right;
         color: #FFF;
     }
+    @media (max-width: 1120px)
+    {
+        h3 {
+            font-size: 30pt;
+        }
+    }
     p {
         height: auto;
         width: 100%;
@@ -360,6 +366,20 @@ tbody tr:nth-child(odd) th {
         margin-left: 25vw;
         height: auto;
         width: 100%;
+        @media (min-width: 555px)
+        {
+            margin-left: 35vw;
+        }
+        @media (min-width: 1120px)
+        {
+            position: absolute;
+            bottom: 0;
+            margin-left: 1vw;
+            a {
+                padding: 0;
+                margin-left: 0;
+            }
+        }
     }
     // @media (min-width: 38em) {
     @media (min-width: 1120px) {
@@ -395,15 +415,15 @@ tbody tr:nth-child(odd) th {
             margin-top: 25%;
             margin-left: 24%;
         }
-        .social {
-            position: absolute;
-            bottom: 0;
-            margin-left: 2vw;
-            a {
-                padding: 0;
-                margin-left: 0;
-            }
-        }
+        // .social {
+        //     position: absolute;
+        //     bottom: 0;
+        //     margin-left: 2vw;
+        //     a {
+        //         padding: 0;
+        //         margin-left: 0;
+        //     }
+        // }
     }
 }
 

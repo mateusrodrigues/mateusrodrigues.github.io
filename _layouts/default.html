@@ -2,43 +2,102 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="preload">
-    <div class="top"></div>
-        <div class="profile" style="background-image: url({{ site.background }}); background-repeat: repeat; background-size: 100%">
-        <!--<div class="profile">-->
-            <img src="https://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s=256" class="img-circle" />
-            <h3 style="color: black">{{ site.name }}</h3>
-            <p style="color: black">{{ site.description }}</p>
-            <ul class="social">
-                {% if site.email %}
-                <a type="button" href="mailto:{{ site.email }}">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-                {% endif %} {% if site.github %}
-                <a type="button" href="http://github.com/{{ site.github }}">
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ site.url }}">
+                <img src="{{ site.basurl }}/images/256x256.png" alt="{{ site.title }}">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+                <span class="icon" style="color: #333;">
                     <i class="fa fa-github"></i>
-                </a>
-                {% endif %} {% if site.twitter %}
-                <a type="button" href="http://twitter.com/{{ site.twitter }}">
+                </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+                <span class="icon" style="color: #55acee;">
                     <i class="fa fa-twitter"></i>
-                </a>
-                {% endif %} {% if site.linkedin %}
-                <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                {% endif %} {% if site.facebook %}
-                <a type="button" href="http://facebook.com/{{ site.facebook }}">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                {% endif %}
-                <a type="button" href="/feed.xml">
-                    <i class="fa fa-rss"></i>
-                </a>
-            </ul>
+                </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                {% for nav in site.nav %}
+                    <a href="{{ nav.href }}" class="navbar-item">{{ nav.name }}</a>
+                {% endfor %}
+            </div>
+            
+            <div class="navbar-end">
+                <a class="navbar-item" href="https://github.com/{{ site.github }}" target="_blank">
+                    Github
+                </a>
+                <a class="navbar-item" href="https://twitter.com/{{ site.twitter }}" target="_blank">
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="top"></div>
+    <div class="profile" style="background-image: url({{ site.background }}); background-repeat: repeat; background-size: 100%">
+        <img src="https://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s=256" class="img-circle" />
+        <h3 style="color: black">{{ site.name }}</h3>
+        <p style="color: black">{{ site.description }}</p>
+        <ul class="social">
+            {% if site.email %}
+            <a type="button" href="mailto:{{ site.email }}">
+                <i class="fa fa-envelope-o"></i>
+            </a>
+            {% endif %} {% if site.github %}
+            <a type="button" href="http://github.com/{{ site.github }}">
+                <i class="fa fa-github"></i>
+            </a>
+            {% endif %} {% if site.twitter %}
+            <a type="button" href="http://twitter.com/{{ site.twitter }}">
+                <i class="fa fa-twitter"></i>
+            </a>
+            {% endif %} {% if site.linkedin %}
+            <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            {% endif %} {% if site.facebook %}
+            <a type="button" href="http://facebook.com/{{ site.facebook }}">
+                <i class="fa fa-facebook"></i>
+            </a>
+            {% endif %}
+            <a type="button" href="/feed.xml">
+                <i class="fa fa-rss"></i>
+            </a>
+        </ul>
+    </div> -->
     <div class="posts">
         {{ content }}
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+            </p>
+            <p>
+                <a class="icon" href="https://github.com/jgthms/bulma">
+                <i class="fa fa-github"></i>
+                </a>
+            </p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"

@@ -9,7 +9,7 @@ When Dropbox was first introduced to the world, I became a faithful customer. I 
 
 Years later, we now have several services that offer free cloud storage -- [OneDrive](http://onedrive.live.com), [Google Drive](http://drive.google.com), [Dropbox](http://dropbox.com), etc. Each having their own free storage caps for you to use to your heart's content. If you need more, you can always pay for it.
 
-But then I occurred to me: _paying is just way too easy!_
+But then it occurred to me: _paying is just way too easy!_
 
 That's when I started researching on services I could install on a VM to turn it into a cloud storage server, and I came across [NextCloud](http://nextcloud.com). NextCloud is an **Open Source** project maintained openly on GitHub that focuses on providing the software to build online storage services with lots of other possibilities through extensions, both for home and the enterprise.
 

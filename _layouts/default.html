@@ -1,46 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 {% include head.html %}
 
-<body class="preload">
-    <div class="top"></div>
-        <div class="profile" style="background-image: url({{ site.background }}); background-repeat: repeat; background-size: 100%">
-        <!--<div class="profile">-->
-            <img src="https://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s=256" class="img-circle" />
-            <h3 style="color: black">{{ site.name }}</h3>
-            <p style="color: black">{{ site.description }}</p>
-            <ul class="social">
-                {% if site.email %}
-                <a type="button" href="mailto:{{ site.email }}">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-                {% endif %} {% if site.github %}
-                <a type="button" href="http://github.com/{{ site.github }}">
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ site.url }}">
+                <img src="{{ site.basurl }}/images/256x256.png" alt="{{ site.title }}">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/{{ site.github }}" target="_blank">
+                <span class="icon" style="color: #333;">
                     <i class="fa fa-github"></i>
-                </a>
-                {% endif %} {% if site.twitter %}
-                <a type="button" href="http://twitter.com/{{ site.twitter }}">
+                </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/{{ site.twitter }}" target="_blank">
+                <span class="icon" style="color: #55acee;">
                     <i class="fa fa-twitter"></i>
-                </a>
-                {% endif %} {% if site.linkedin %}
-                <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}">
+                </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank">
+                <span class="icon" style="color: #0077b5;">
                     <i class="fa fa-linkedin"></i>
-                </a>
-                {% endif %} {% if site.facebook %}
-                <a type="button" href="http://facebook.com/{{ site.facebook }}">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                {% endif %}
-                <a type="button" href="/feed.xml">
-                    <i class="fa fa-rss"></i>
-                </a>
-            </ul>
+                </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    <div class="posts">
-        {{ content }}
-    </div>
+
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+                {% for nav in site.nav %}
+                    <a href="{{ nav.href }}" class="navbar-item">{{ nav.name }}</a>
+                {% endfor %}
+            </div>
+            
+            <div class="navbar-end is-hidden-mobile">
+                <a class="navbar-item" href="https://github.com/{{ site.github }}" target="_blank">
+                    <i class="fa fa-github" style="color: #333;"></i>
+                </a>
+                <a class="navbar-item" href="https://twitter.com/{{ site.twitter }}" target="_blank">
+                    <i class="fa fa-twitter" style="color: #55acee;"></i>
+                </a>
+                <a class="navbar-item" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank">
+                    <i class="fa fa-linkedin" style="color: #0077b5;"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="top"></div>
+    <div class="profile" style="background-image: url({{ site.background }}); background-repeat: repeat; background-size: 100%">
+        <img src="https://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s=256" class="img-circle" />
+        <h3 style="color: black">{{ site.name }}</h3>
+        <p style="color: black">{{ site.description }}</p>
+        <ul class="social">
+            {% if site.email %}
+            <a type="button" href="mailto:{{ site.email }}">
+                <i class="fa fa-envelope-o"></i>
+            </a>
+            {% endif %} {% if site.github %}
+            <a type="button" href="http://github.com/{{ site.github }}">
+                <i class="fa fa-github"></i>
+            </a>
+            {% endif %} {% if site.twitter %}
+            <a type="button" href="http://twitter.com/{{ site.twitter }}">
+                <i class="fa fa-twitter"></i>
+            </a>
+            {% endif %} {% if site.linkedin %}
+            <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            {% endif %} {% if site.facebook %}
+            <a type="button" href="http://facebook.com/{{ site.facebook }}">
+                <i class="fa fa-facebook"></i>
+            </a>
+            {% endif %}
+            <a type="button" href="/feed.xml">
+                <i class="fa fa-rss"></i>
+            </a>
+        </ul>
+    </div> -->
+    
+    {{ content }}
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+            <p>
+                <strong>Mateus's Blog</strong> by <a href="http://mateus.tech">Mateus de Morais</a>
+            </p>
+            <p>Web and Cloud Developer | mateus@mateus.tech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ site.baseurl }}/resources/site.js"></script>
 </body>
-<script
+<!-- <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
@@ -49,5 +113,5 @@
     window.onload = function(){
         document.getElementsByTagName("BODY")[0].classList.remove("preload");
     }
-</script>
+</script> -->
 </html>
